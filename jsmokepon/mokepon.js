@@ -96,7 +96,8 @@ function ataqueAgua(){
     alert (ataqueEnemigo)
 }
 
-
+function hello()
+{}
 
 
 
