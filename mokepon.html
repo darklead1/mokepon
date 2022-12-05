@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>MOKEPÓN</title>
+   <script src="./jsmokepon/mokepon.js"></script>
+</head>
+
+<body>
+    <h1>MOKEPÓN 🔥🌱💧</h1>
+
+     <section id="seleccionar mascota"> 
+        <h2> Elige tu MOKEPÓN : </h2>
+
+        
+
+        <label for="Squartletortugafachera">Squartletortugafachera</label>
+        <input type="radio" name="mascota" id="Squartletortugafachera"/>
+
+        <label for="Bulbasour">Bulbasour</label>
+        <input type="radio" name="mascota" id="Bulbasour"/>
+
+        <label for="Charmander">Charmander</label>
+        <input type="radio" name="mascota" id="Charmander"/>
+
+
+        <button id="boton-mascota"> Seleccionar </button>
+    </section>
+
+
+     <section id="seleccionar ataque">
+        <h2> Elige tu ataque : </h2>
+
+
+         <!-- Squartletortugafachera -> Agua
+        Bulbasour -> Tierra
+        Charmander -> Fuego
+
+        squartmander -> Agua y Fuego
+        Squarbasour -> agua y tierra
+        Charbasour -> Tierra y Fuego -->
+        
+
+        <button> Seleccionar </button>
+
+        <p> Tu MOKEPÓN <span id="mascota-jugador"></span> tiene <span> 3 </span> vidas </p>
+        <p> El MOKEPÓN <span id="mascota-enemigo"></span> del enemigo tiene <span>3</span> vidas</p>
+        <p>
+            <button id="boton-fuego">Fuego🔥</button>
+            <button id="boton-tierra">Tierra 🌱</button>
+            <button id="boton-agua">Agua 💧</button>
+        </p>
+
+     </section>     
+     <section id=" Mensasjes ">
+        <p> Tu Mokepon atacó con <span id="ataque-Jugador"></span> el Mokepon del enemigo atacó con <span id="ataque-enemigo"></span>, GANASTE 👍😁</p>
+
+     </section>
+
+     <section id="reiniciar"> 
+        <button id="boton-reiniciar">Reiniciar</button>
+     </section>
+     
+
+
+    
+
+</body>
+
+
+
+
+</html>
