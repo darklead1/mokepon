@@ -65,12 +65,23 @@ function ataqueEnemigoAleatorio (){
         ataqueEnemigo = "FUEGO"
     
     } else if (ataqueAleatorio == 2){
-        ataqueEnemigo = "AGUA"    
+        ataqueEnemigo = "TIERRA"    
     
-    } else if ( ataqueAleatorio == 3)
-    { ataqueEnemigo = "TIERRA"}
- 
+    } else {
+     ataqueEnemigo = "AGUA" }
 
+    crearMensaje()
+
+}
+
+function crearMensaje(){
+
+    let sectionMensajes = document.getElementById("mensajes")
+
+    let parrafo = document.createElement("p")
+    parrafo.innerHTML = "Tu Mokepon atacó con " + ataqueJugador + " el Mokepon del enemigo atacó con " + ataqueEnemigo 
+
+    sectionMensajes.appendChild(parrafo)
 }
 
 
@@ -79,30 +90,27 @@ function ataqueFuego(){
     ataqueJugador = "FUEGO"
     ataqueEnemigoAleatorio()
 
-    alert (ataqueJugador)
-    alert (ataqueEnemigo)
+    //alert (ataqueJugador)
+    //alert (ataqueEnemigo)
 }
 
 function ataqueTierra(){
     ataqueJugador = "Tierra"
     ataqueEnemigoAleatorio()
-    alert (ataqueJugador)
-    alert (ataqueEnemigo)
+   // alert (ataqueJugador)
+    //alert (ataqueEnemigo)
 }
 function ataqueAgua(){
     ataqueJugador = "Agua"
     ataqueEnemigoAleatorio()
-    alert (ataqueJugador)
-    alert (ataqueEnemigo)
+    //alert (ataqueJugador)
+    //alert (ataqueEnemigo)
 }
-
-function hello()
-{}
 
 
 
 function aleatorio (min, max){
-    return Math.floor (Math.random() * (max - min) + 1 )
+    return Math.floor (Math.random() * (max - min + 1 ) +min)
 
 
 
